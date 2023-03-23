@@ -1,0 +1,179 @@
+testname: webMUSHRA Example
+testId: default_example
+bufferSize: 2048
+stopOnErrors: true
+showButtonPreviousPage: true
+remoteService: service/write.php
+
+
+pages:
+    # Generic welcome page
+    - type: generic
+      id: first_page
+      name: Welcome
+      content: Welcome to webMUSHRA!
+    # Consent page
+    - type: consent
+      id: consent_page
+      name: Consent
+      mustConsent: true
+      content: <p>You are participating in a listening test. For this, we want to store the answers you give to the following questions, this data is anonymous.<br>Do you give consent for this?</p>
+    # Training page
+    - type: mushra
+      id: training
+      name: MUSHRA
+      content: This training shows how to use our user interface. Please perform the underlined instructions to proceed with the training session. Reminder: In a MUSHRA listening test you are asked to rate the Basic Audio Quality (BAQ) of each condition.<br/>Basic Audio Quality is a single and global attribute that is used to judge any and all detected differences between the reference and the condition.
+      showWaveform: true
+      enableLooping: true 
+      reference: configs/resources/audio/mono_ref.wav
+      createAnchor35: true
+      createAnchor70: true
+      stimuli:
+          C1: configs/resources/audio/mono_c1.wav
+          C2: configs/resources/audio/mono_c2.wav
+          C3: configs/resources/audio/mono_c3.wav
+    - 
+          - random
+          # Compressor  
+          - type: mushra
+            id: multiband0
+            name: MultiBand Compressor
+            content: Please rate how well each condition matches the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/y/multiband0.wav
+            createAnchor35: false
+            createAnchor70: false
+            stimuli:
+                anchor: configs/resources/audio/rand_y_hat/multiband0.wav
+                end2end: configs/resources/audio/e2e_y_hat/multiband0.wav
+                style_transfer: configs/resources/audio/st_y_hat/multiband0.wav
+          - type: mushra
+            id: multiband1
+            name: MultiBand Compressor
+            content: Please rate how well each condition matches the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/y/multiband1.wav
+            createAnchor35: false
+            createAnchor70: false
+            stimuli:
+                anchor: configs/resources/audio/rand_y_hat/multiband1.wav
+                end2end: configs/resources/audio/e2e_y_hat/multiband1.wav
+                style_transfer: configs/resources/audio/st_y_hat/multiband1.wav    
+          - type: mushra
+            id: multiband2
+            name: MultiBand Compressor
+            content: Please rate how well each condition matches the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/y/multiband2.wav
+            createAnchor35: false
+            createAnchor70: false
+            stimuli:
+                anchor: configs/resources/audio/rand_y_hat/multiband2.wav
+                end2end: configs/resources/audio/e2e_y_hat/multiband2.wav
+                style_transfer: configs/resources/audio/st_y_hat/multiband2.wav   
+          - type: mushra
+            id: multiband3
+            name: MultiBand Compressor
+            content: Please rate how well each condition matches the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/y/multiband3.wav
+            createAnchor35: false
+            createAnchor70: false
+            stimuli:
+                anchor: configs/resources/audio/rand_y_hat/multiband3.wav
+                end2end: configs/resources/audio/e2e_y_hat/multiband3.wav
+                style_transfer: configs/resources/audio/st_y_hat/multiband3.wav   
+          - type: mushra
+            id: multiband4
+            name: MultiBand Compressor
+            content: Please rate how well each condition matches the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/y/multiband4.wav
+            createAnchor35: false
+            createAnchor70: false
+            stimuli:
+                anchor: configs/resources/audio/rand_y_hat/multiband4.wav
+                end2end: configs/resources/audio/e2e_y_hat/multiband4.wav
+                style_transfer: configs/resources/audio/st_y_hat/multiband4.wav 
+          # Overdrive  
+          - type: mushra
+            id: overdrive0
+            name: Overdrive/Distortion
+            content: Please rate how well each condition matches the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/y/overdrive0.wav
+            createAnchor35: false
+            createAnchor70: false
+            stimuli:
+                anchor: configs/resources/audio/rand_y_hat/overdrive0.wav
+                end2end: configs/resources/audio/e2e_y_hat/overdrive0.wav
+          - type: mushra
+            id: overdrive1
+            name: Overdrive/Distortion
+            content: Please rate how well each condition matches the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/y/overdrive1.wav
+            createAnchor35: false
+            createAnchor70: false
+            stimuli:
+                anchor: configs/resources/audio/rand_y_hat/overdrive1.wav
+                end2end: configs/resources/audio/e2e_y_hat/overdrive1.wav
+          - type: mushra
+            id: overdrive2
+            name: Overdrive/Distortion
+            content: Please rate how well each condition matches the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/y/overdrive2.wav
+            createAnchor35: false
+            createAnchor70: false
+            stimuli:
+                anchor: configs/resources/audio/rand_y_hat/overdrive2.wav
+                end2end: configs/resources/audio/e2e_y_hat/overdrive2.wav  
+          - type: mushra
+            id: overdrive3
+            name: Overdrive/Distortion
+            content: Please rate how well each condition matches the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/y/overdrive3.wav
+            createAnchor35: false
+            createAnchor70: false
+            stimuli:
+                anchor: configs/resources/audio/rand_y_hat/overdrive3.wav
+                end2end: configs/resources/audio/e2e_y_hat/overdrive3.wav
+          - type: mushra
+            id: overdrive4
+            name: Overdrive/Distortion
+            content: Please rate how well each condition matches the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/y/overdrive4.wav
+            createAnchor35: false
+            createAnchor70: false
+            stimuli:
+                anchor: configs/resources/audio/rand_y_hat/overdrive4.wav
+                end2end: configs/resources/audio/e2e_y_hat/overdrive4.wav
+
+    - type: finish
+      name: Thank you
+      content: Thank you for attending!
+      showResults: true
+      writeResults: true
+      questionnaire:
+          - type: text
+            label: eMail
+            name: email
+          - type: number
+            label: Age
+            name: age
+            min: 0
+            max: 100
+            default: 30
+          - type: likert
+            name: gender
+            label: Gender
+            response:
+             - value: female
+               label: Female
+             - value: male
+               label: Male
+             - value: other
+               label: Other
