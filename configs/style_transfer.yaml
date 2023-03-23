@@ -1,5 +1,5 @@
-testname: webMUSHRA Example
-testId: default_example
+testname: Style Transfer MUSHRA Test
+testId: style_transfer
 bufferSize: 2048
 stopOnErrors: true
 showButtonPreviousPage: true
@@ -43,6 +43,7 @@ pages:
             reference: configs/resources/audio/y/multiband0.wav
             createAnchor35: false
             createAnchor70: false
+            randomize: true
             stimuli:
                 anchor: configs/resources/audio/rand_y_hat/multiband0.wav
                 end2end: configs/resources/audio/e2e_y_hat/multiband0.wav
@@ -55,6 +56,7 @@ pages:
             reference: configs/resources/audio/y/multiband1.wav
             createAnchor35: false
             createAnchor70: false
+            randomize: true
             stimuli:
                 anchor: configs/resources/audio/rand_y_hat/multiband1.wav
                 end2end: configs/resources/audio/e2e_y_hat/multiband1.wav
@@ -67,6 +69,7 @@ pages:
             reference: configs/resources/audio/y/multiband2.wav
             createAnchor35: false
             createAnchor70: false
+            randomize: true
             stimuli:
                 anchor: configs/resources/audio/rand_y_hat/multiband2.wav
                 end2end: configs/resources/audio/e2e_y_hat/multiband2.wav
@@ -79,6 +82,7 @@ pages:
             reference: configs/resources/audio/y/multiband3.wav
             createAnchor35: false
             createAnchor70: false
+            randomize: true
             stimuli:
                 anchor: configs/resources/audio/rand_y_hat/multiband3.wav
                 end2end: configs/resources/audio/e2e_y_hat/multiband3.wav
@@ -91,6 +95,7 @@ pages:
             reference: configs/resources/audio/y/multiband4.wav
             createAnchor35: false
             createAnchor70: false
+            randomize: true
             stimuli:
                 anchor: configs/resources/audio/rand_y_hat/multiband4.wav
                 end2end: configs/resources/audio/e2e_y_hat/multiband4.wav
@@ -104,6 +109,7 @@ pages:
             reference: configs/resources/audio/y/overdrive0.wav
             createAnchor35: false
             createAnchor70: false
+            randomize: true
             stimuli:
                 anchor: configs/resources/audio/rand_y_hat/overdrive0.wav
                 end2end: configs/resources/audio/e2e_y_hat/overdrive0.wav
@@ -115,6 +121,7 @@ pages:
             reference: configs/resources/audio/y/overdrive1.wav
             createAnchor35: false
             createAnchor70: false
+            randomize: true
             stimuli:
                 anchor: configs/resources/audio/rand_y_hat/overdrive1.wav
                 end2end: configs/resources/audio/e2e_y_hat/overdrive1.wav
@@ -126,6 +133,7 @@ pages:
             reference: configs/resources/audio/y/overdrive2.wav
             createAnchor35: false
             createAnchor70: false
+            randomize: true
             stimuli:
                 anchor: configs/resources/audio/rand_y_hat/overdrive2.wav
                 end2end: configs/resources/audio/e2e_y_hat/overdrive2.wav  
@@ -137,6 +145,7 @@ pages:
             reference: configs/resources/audio/y/overdrive3.wav
             createAnchor35: false
             createAnchor70: false
+            randomize: true
             stimuli:
                 anchor: configs/resources/audio/rand_y_hat/overdrive3.wav
                 end2end: configs/resources/audio/e2e_y_hat/overdrive3.wav
@@ -148,6 +157,7 @@ pages:
             reference: configs/resources/audio/y/overdrive4.wav
             createAnchor35: false
             createAnchor70: false
+            randomize: true
             stimuli:
                 anchor: configs/resources/audio/rand_y_hat/overdrive4.wav
                 end2end: configs/resources/audio/e2e_y_hat/overdrive4.wav
@@ -157,23 +167,3 @@ pages:
       content: Thank you for your participation!
       showResults: true
       writeResults: true
-      # questionnaire:
-      #     - type: text
-      #       label: eMail
-      #       name: email
-      #     - type: number
-      #       label: Age
-      #       name: age
-      #       min: 0
-      #       max: 100
-      #       default: 30
-      #     - type: likert
-      #       name: gender
-      #       label: Gender
-      #       response:
-      #        - value: female
-      #          label: Female
-      #        - value: male
-      #          label: Male
-      #        - value: other
-      #          label: Other
