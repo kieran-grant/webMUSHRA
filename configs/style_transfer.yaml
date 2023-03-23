@@ -17,12 +17,18 @@ pages:
       id: consent_page
       name: Consent
       mustConsent: true
-      content: <p>You are participating in a listening test. For this, we want to store the answers you give to the following questions, this data is anonymous.<br>Do you give consent for this?</p>
+      content: >
+          <p>The aim of this experiment is to assess the suitability of our deep-learning approach to audio production style matching using digital audio effects. In order to understand the perceptual performance of our model, we require human participants to listen to produced audio samples and give them a subjective rating.</p>
+          <p>During this listening test you will be given a piece of reference audio and some style matching attempts (conditions). You will be asked to rate each of the conditions on a scale of 1-100, the rating should reflect your opinion of how well the condition matches the reference. Your answers will be stored in an anonymised format. If you exit the test before clicking the "Send Results" button, no information will be stored.</p>
+          <p>If you have any questions, please feel free to email me at <a href="mailto:2357351g@student.gla.ac.uk">2357351g@student.gla.ac.uk</a>.</p>
+          <p>Do you agree to taking part in this evaluation?</p>
     # Training page
     - type: mushra
       id: training
       name: MUSHRA
-      content: This training shows how to use our user interface. Please perform the underlined instructions to proceed with the training session. Reminder: In a MUSHRA listening test you are asked to rate the Basic Audio Quality (BAQ) of each condition.<br/>Basic Audio Quality is a single and global attribute that is used to judge any and all detected differences between the reference and the condition.
+      content: >
+        This training shows how to use our user interface. Please perform the underlined instructions to proceed with the training session. 
+        Reminder: In a MUSHRA listening test you are asked to rate the Basic Audio Quality (BAQ) of each condition.<br/>Basic Audio Quality is a single and global attribute that is used to judge any and all detected differences between the reference and the condition.
       showWaveform: true
       enableLooping: true 
       reference: configs/resources/audio/mono_ref.wav
@@ -164,6 +170,9 @@ pages:
 
     - type: finish
       name: Thank you
-      content: Thank you for your participation!
+      content: >
+        <p>The main aim of this experiment was to investigate the performance of our deep-learning approach to audio production style matching using digital audio effects. Your ratings will help us gauge model performance against other style matching approaches.</p>
+        <p>Thank you for your participation! Please remember to click the "Send Results" button for your responses to be logged.</p>
+        <p>If you have any questions about this listening test, please feel free to email me at <a href="mailto:2357351g@student.gla.ac.uk">2357351g@student.gla.ac.uk</a>.</p>
       showResults: true
       writeResults: true
