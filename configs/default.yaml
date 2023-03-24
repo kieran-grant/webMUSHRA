@@ -40,6 +40,7 @@ pages:
           C3: configs/resources/audio/mono_c3.wav
     - 
           - random
+
           # Compressor  
           - type: mushra
             id: multiband0
@@ -80,32 +81,7 @@ pages:
                 anchor: configs/resources/audio/rand_y_hat/multiband2.wav
                 end2end: configs/resources/audio/e2e_y_hat/multiband2.wav
                 style_transfer: configs/resources/audio/st_y_hat/multiband2.wav   
-          - type: mushra
-            id: multiband3
-            name: MultiBand Compressor
-            content: Please rate how well each condition matches the reference.
-            enableLooping: true 
-            reference: configs/resources/audio/y/multiband3.wav
-            createAnchor35: false
-            createAnchor70: false
-            randomize: true
-            stimuli:
-                anchor: configs/resources/audio/rand_y_hat/multiband3.wav
-                end2end: configs/resources/audio/e2e_y_hat/multiband3.wav
-                style_transfer: configs/resources/audio/st_y_hat/multiband3.wav   
-          - type: mushra
-            id: multiband4
-            name: MultiBand Compressor
-            content: Please rate how well each condition matches the reference.
-            enableLooping: true 
-            reference: configs/resources/audio/y/multiband4.wav
-            createAnchor35: false
-            createAnchor70: false
-            randomize: true
-            stimuli:
-                anchor: configs/resources/audio/rand_y_hat/multiband4.wav
-                end2end: configs/resources/audio/e2e_y_hat/multiband4.wav
-                style_transfer: configs/resources/audio/st_y_hat/multiband4.wav 
+
           # Overdrive  
           - type: mushra
             id: overdrive0
@@ -143,30 +119,82 @@ pages:
             stimuli:
                 anchor: configs/resources/audio/rand_y_hat/overdrive2.wav
                 end2end: configs/resources/audio/e2e_y_hat/overdrive2.wav  
+
+          # ambience  
           - type: mushra
-            id: overdrive3
-            name: Overdrive/Distortion
+            id: ambience0
+            name: Reverb
             content: Please rate how well each condition matches the reference.
             enableLooping: true 
-            reference: configs/resources/audio/y/overdrive3.wav
+            reference: configs/resources/audio/y/ambience0.wav
             createAnchor35: false
             createAnchor70: false
             randomize: true
             stimuli:
-                anchor: configs/resources/audio/rand_y_hat/overdrive3.wav
-                end2end: configs/resources/audio/e2e_y_hat/overdrive3.wav
+                anchor: configs/resources/audio/rand_y_hat/ambience0.wav
+                end2end: configs/resources/audio/e2e_y_hat/ambience0.wav
           - type: mushra
-            id: overdrive4
-            name: Overdrive/Distortion
+            id: ambience1
+            name: Reverb
             content: Please rate how well each condition matches the reference.
             enableLooping: true 
-            reference: configs/resources/audio/y/overdrive4.wav
+            reference: configs/resources/audio/y/ambience1.wav
             createAnchor35: false
             createAnchor70: false
             randomize: true
             stimuli:
-                anchor: configs/resources/audio/rand_y_hat/overdrive4.wav
-                end2end: configs/resources/audio/e2e_y_hat/overdrive4.wav
+                anchor: configs/resources/audio/rand_y_hat/ambience1.wav
+                end2end: configs/resources/audio/e2e_y_hat/ambience1.wav
+          - type: mushra
+            id: ambience2
+            name: Reverb
+            content: Please rate how well each condition matches the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/y/ambience2.wav
+            createAnchor35: false
+            createAnchor70: false
+            randomize: true
+            stimuli:
+                anchor: configs/resources/audio/rand_y_hat/ambience2.wav
+                end2end: configs/resources/audio/e2e_y_hat/ambience2.wav  
+
+          # delay  
+          - type: mushra
+            id: delay0
+            name: Delay
+            content: Please rate how well each condition matches the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/y/delay0.wav
+            createAnchor35: false
+            createAnchor70: false
+            randomize: true
+            stimuli:
+                anchor: configs/resources/audio/rand_y_hat/delay0.wav
+                end2end: configs/resources/audio/e2e_y_hat/delay0.wav
+          - type: mushra
+            id: delay1
+            name: Delay
+            content: Please rate how well each condition matches the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/y/delay1.wav
+            createAnchor35: false
+            createAnchor70: false
+            randomize: true
+            stimuli:
+                anchor: configs/resources/audio/rand_y_hat/delay1.wav
+                end2end: configs/resources/audio/e2e_y_hat/delay1.wav
+          - type: mushra
+            id: delay2
+            name: Delay
+            content: Please rate how well each condition matches the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/y/delay2.wav
+            createAnchor35: false
+            createAnchor70: false
+            randomize: true
+            stimuli:
+                anchor: configs/resources/audio/rand_y_hat/delay2.wav
+                end2end: configs/resources/audio/e2e_y_hat/delay2.wav  
 
     - type: finish
       name: Thank you
